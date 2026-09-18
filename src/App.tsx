@@ -20,7 +20,7 @@ export function App() {
   const [activeTab, setActiveTab] = useState<NavigationTab>('citizen-portal');
   const [theme, setTheme] = useState<ThemeMode>(() => {
     const saved = localStorage.getItem('civicflow_theme') as ThemeMode;
-    return saved || 'light';
+    return saved || 'midnight-aurora';
   });
   const [isHelpOpen, setIsHelpOpen] = useState(false);
 
